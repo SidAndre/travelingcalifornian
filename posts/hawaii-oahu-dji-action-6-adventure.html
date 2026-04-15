@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filming Hawaii with the DJI Action 6: Oahu Adventures with Family — Traveling Californian</title>
+  <meta name="description" content="We took the DJI Action 6 to Oahu and filmed everything — surfing Waikiki, hiking Koko Crater, snorkeling Hanauma Bay, and diving with Waikiki Dive Center.">
+  <meta property="og:title" content="Filming Hawaii with the DJI Action 6: Oahu Adventures with Family">
+  <meta property="og:description" content="We took the DJI Action 6 to Oahu and filmed everything — surfing Waikiki, hiking Koko Crater, snorkeling Hanauma Bay, and diving with Waikiki Dive Center.">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="../style.css">
+
+<style>
+  /* ============================
+     POST PAGE STYLES
+     ============================ */
+
+  /* Ad slots — clear float after rectangle ad */
+  .post-content::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .ad-slot {
+    box-sizing: border-box;
+  }
+  /* On narrow screens, rectangle ad stacks full-width */
+  @media (max-width: 640px) {
+    .ad-rectangle {
+      float: none !important;
+      margin: 0 auto 24px !important;
+      width: 100% !important;
+      max-width: 340px !important;
+    }
+  }
+
+  /* Hero */
+  .post-hero {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .post-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .post-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.35);
+  }
+  .post-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 860px;
+    margin-inline: auto;
+    padding: 0 var(--space-6) var(--space-12);
+    color: #fff;
+  }
+  .post-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: var(--radius-full);
+    padding: var(--space-1) var(--space-4);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: var(--space-4);
+  }
+  .post-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: var(--space-4);
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+  .post-hero-meta {
+    font-size: var(--text-sm);
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+  }
+
+  /* Back button */
+  .post-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    border: 2px solid var(--color-primary);
+    padding: var(--space-2) var(--space-5);
+    border-radius: var(--radius-full);
+    transition: background var(--transition-interactive), color var(--transition-interactive);
+  }
+  .post-back-btn:hover {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  .post-back-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+  /* Article wrapper */
+  .post-article-outer {
+    background: var(--color-bg);
+    padding: var(--space-12) var(--space-6);
+  }
+  .post-article-inner {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+  .post-nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-10);
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+  .post-nav-top .blog-cat {
+    font-size: var(--text-sm);
+  }
+
+  /* Article content */
+  .post-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text);
+  }
+  .post-content p {
+    margin-bottom: 1.5em;
+  }
+  .post-content .post-h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--color-primary);
+    margin-top: 2.5em;
+    margin-bottom: 0.75em;
+    line-height: 1.2;
+  }
+  .post-content .post-h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+    line-height: 1.3;
+  }
+  .post-content .post-h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  .post-content .post-list {
+    padding-left: 1.75em;
+    margin-bottom: 1.5em;
+  }
+  .post-content .post-list li {
+    margin-bottom: 0.5em;
+    line-height: 1.7;
+  }
+  .post-content .pull-quote {
+    border-left: 4px solid var(--color-primary);
+    background: var(--color-surface-2);
+    margin: 2em 0;
+    padding: var(--space-6) var(--space-8);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  .post-content a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .post-content strong {
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  /* Tip box */
+  .tip-box {
+    background: linear-gradient(135deg, rgba(10,126,168,0.08) 0%, rgba(10,126,168,0.04) 100%);
+    border: 1px solid rgba(10,126,168,0.2);
+    border-left: 4px solid #0A7EA8;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    padding: var(--space-5) var(--space-6);
+    margin: 1.8em 0;
+  }
+  .tip-box .tip-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0A7EA8;
+    margin-bottom: 0.5em;
+  }
+  .tip-box p {
+    margin-bottom: 0 !important;
+    font-size: 1rem;
+    color: var(--color-text);
+  }
+  .tip-box ul {
+    padding-left: 1.2em;
+    margin: 0.5em 0 0;
+    font-size: 1rem;
+    color: var(--color-text);
+  }
+  .tip-box ul li {
+    margin-bottom: 0.3em;
+    line-height: 1.6;
+  }
+
+  /* Post footer nav */
+  .post-nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--space-14);
+    padding-top: var(--space-10);
+    border-top: 1px solid var(--color-divider);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .post-hero { height: 380px; }
+    .post-hero-content { padding: 0 var(--space-4) var(--space-8); }
+    .post-article-outer { padding: var(--space-8) var(--space-4); }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8924832797393378"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<a href="#main" class="sr-only" style="position:fixed;top:0;left:0;z-index:999;padding:1rem 1.5rem;background:var(--color-primary);color:#fff;border-radius:0 0 var(--radius-md) 0;">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <nav class="nav-container">
+    <a href="../index.html" class="logo" aria-label="Traveling Californian Home">
+      <div class="logo-icon">
+        <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
+          <path d="M13 3 C13 3, 7 8, 5 14 C3 20, 8 23, 13 23 C18 23, 23 20, 21 14 C19 8, 13 3, 13 3Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+          <path d="M8 17 Q10 12, 13 10 Q16 8, 18 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+          <circle cx="13" cy="10" r="2" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        Traveling Californian
+        <span>Family Travel &amp; Adventures</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html#videos">Vlogs</a></li>
+      <li><a href="../blog.html" style="color:var(--color-primary);">Blog</a></li>
+      <li><a href="../index.html#turo">Rent Our Jeep</a></li>
+      <li><a href="../index.html#about">About Us</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer" class="btn-rent">
+        🚙 Rent Our Jeep
+      </a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="menu-open" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
+  <button class="mobile-nav-close" id="menu-close" aria-label="Close menu">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="../index.html#videos" onclick="closeMobileNav()">Vlogs</a>
+  <a href="../blog.html" onclick="closeMobileNav()">Blog</a>
+  <a href="../index.html#turo" onclick="closeMobileNav()">Rent Our Jeep</a>
+  <a href="../index.html#about" onclick="closeMobileNav()">About Us</a>
+</div>
+
+<!-- Expedia Affiliate Banner -->
+<div style="text-align:center;margin:20px auto;">
+<div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="medium-rectangle" data-image="beach" data-message="bye-bye-bucket-list-hello-adventure" data-camref="1011lvAMj" data-pubref="" data-link="home"></div>
+<script class="eg-affiliate-banners-script" src="https://creator.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+</div>
+
+<!-- MAIN -->
+<main id="main">
+
+  <!-- POST HERO -->
+  <section class="post-hero">
+    <div class="post-hero-bg" style="background: linear-gradient(135deg, #0A7EA8 0%, #1A1209 100%);"></div>
+    <div class="post-hero-overlay"></div>
+    <div class="post-hero-content">
+      <div class="post-hero-badge">Gear Review · Destination Guide</div>
+      <h1 class="post-hero-title">Filming Hawaii with the DJI Action 6: Oahu Adventures with Family</h1>
+      <div class="post-hero-meta">By Sid Somoza &nbsp;·&nbsp; April 15, 2026</div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <article class="post-article-outer">
+    <div class="post-article-inner">
+
+      <!-- Top nav -->
+      <div class="post-nav-top">
+        <a href="../blog.html" class="post-back-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          Back to Blog
+        </a>
+        <span class="blog-cat">Gear Review</span>
+      </div>
+
+      <!-- Content -->
+      <div class="post-content">
+
+<p>Aloha, friends! We just got back from one of the most incredible family trips we've ever taken — a week on Oahu, Hawaii — and I'm still riding the wave (pun fully intended). Every single moment was beautiful, chaotic, sweaty, and perfect all at once. And I had my brand new <strong>DJI Action 6</strong> strapped to my wrist, my chest, and basically any surface I could mount it to for the entire trip.</p>
+
+<p>I've been testing a lot of action cameras over the years, and I have to say — the DJI Action 6 may be the best one I've ever traveled with. It's compact, it shoots stunning 4K footage, and it's genuinely waterproof right out of the box. When you're dealing with surf, snorkeling, and the occasional sweaty hike, that matters more than you'd think. Let me walk you through everything we did and how the camera performed at each stop.</p>
+
+<div class="pull-quote">"The DJI Action 6 went with us everywhere on Oahu — and it never missed a beat."</div>
+
+<!-- Expedia Affiliate Banner -->
+<div style="text-align:center;margin:20px auto;">
+<div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="medium-rectangle" data-image="beach" data-message="bye-bye-bucket-list-hello-adventure" data-camref="1011lvAMj" data-pubref="" data-link="home"></div>
+<script class="eg-affiliate-banners-script" src="https://creator.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+</div>
+
+<h2 class="post-h2">🏄 Surfing at Waikiki Beach</h2>
+
+<p>If you've never surfed before, Waikiki is genuinely the best place on earth to start. The waves are gentle, the water is warm, and there are surf instructors lined up along the beach who can get you standing on a board in under an hour — kids included. We went with a small group lesson and even our youngest was up on the board by the second wave. It's one of those rare travel moments where everyone succeeds, and everyone's laughing.</p>
+
+<p>Now, I had the DJI Action 6 mounted on a floating handle so I could film us from the water. What I love about this camera is the horizon stabilization — even when waves are slapping against the mount, the footage stays impressively level. The wide-angle lens (equivalent to about 12mm) captures the full breadth of the wave and the rider without you having to think about framing too much. I also used the magnetic mount to attach it to my surfboard for a low-angle POV shot of the wave rolling in beneath me. That footage looked insane.</p>
+
+<p>The waterproofing on the Action 6 is rated to 20 meters without a housing — so dunking it while paddling out or wiping out in the whitewash was zero issue. I just rinsed it with fresh water after the session and we were good to go.</p>
+
+<div class="tip-box">
+  <div class="tip-label">📍 Practical Tips — Waikiki Beach Surfing</div>
+  <ul>
+    <li><strong>Parking:</strong> Use the Waikiki Beach parking garage on Kalakaua Ave or the Kapahulu metered lots. Expect $2–$3/hour. Arrive early — spots fill fast by 8 AM.</li>
+    <li><strong>Best time to go:</strong> Early morning (7–9 AM) for smaller crowds and glassy water. Surf lessons run all day but morning sessions are calmer.</li>
+    <li><strong>Cost:</strong> Group surf lessons typically run $30–$50/person. Private lessons are $75–$100/hour.</li>
+    <li><strong>DJI Action 6 tip:</strong> Use the floating handle grip for water shots. Enable Horizon Steady mode for silky-smooth wave footage.</li>
+  </ul>
+</div>
+
+<h2 class="post-h2">🥾 Hiking Koko Crater Trail</h2>
+
+<p>Okay, I'm going to be honest with you: Koko Crater almost broke me. This isn't your casual nature walk. The trail follows an old military railway line straight up the side of a volcanic crater — 1,048 wooden railway steps, some of which have gaps over a drop that'll make your palms sweat. It's steep, it's exposed to the sun, and on the day we went it was pushing 90 degrees. But the view from the top? Absolutely worth every burning quad.</p>
+
+<p>From the summit, you get a 360-degree panorama of the southeastern coast of Oahu — Hanauma Bay, the Pacific Ocean stretching to the horizon, and the crater bowl dropping below you on the other side. It's the kind of view that makes you feel very small and very grateful at the same time.</p>
+
+<p>I had the DJI Action 6 on a chest mount for most of the hike, which kept my hands free for the steeper sections (you'll want both hands on those railway ties). The camera's built-in image stabilization handled the bouncy footstep footage beautifully — way smoother than I expected from a chest-mounted camera. I also pulled it off the chest mount at the summit to shoot some panning shots of the view. The color science on the Action 6 is really impressive in daylight; those blue-green ocean tones popped without any correction needed in post.</p>
+
+<p>One thing I should mention: the Action 6's battery can drain quickly in the heat. I brought two spare batteries in my daypack, which turned out to be the right call.</p>
+
+<div class="tip-box">
+  <div class="tip-label">📍 Practical Tips — Koko Crater Trail</div>
+  <ul>
+    <li><strong>Parking:</strong> Free parking lot at the Koko Crater Botanical Garden on Kokonani St. Spaces are limited — arrive before 7 AM on weekends.</li>
+    <li><strong>Best time to go:</strong> Sunrise hike (start around 5:30–6 AM) to beat both the heat and the crowds. Bring a headlamp if going pre-dawn.</li>
+    <li><strong>Cost:</strong> Free! No permit needed.</li>
+    <li><strong>Difficulty:</strong> Moderate-strenuous. Not recommended for young children or anyone with knee issues.</li>
+    <li><strong>DJI Action 6 tip:</strong> Chest mount for the ascent. Bring extra batteries — heat drains power faster than you'd expect.</li>
+  </ul>
+</div>
+
+<h2 class="post-h2">🐠 Snorkeling at Hanauma Bay</h2>
+
+<p>Hanauma Bay is one of those places you've seen in a hundred travel photos and still can't believe is real when you show up in person. The bay is a volcanic crater that opened to the ocean, creating a naturally protected cove with water so clear you can see 30 feet down with the naked eye. The reef is teeming with Hawaiian reef fish — yellow tang, Moorish idols, parrotfish, triggerfish — and if you're lucky, you'll encounter the Hawaiian green sea turtle (honu) gliding beneath you. We saw two.</p>
+
+<p>This is where the DJI Action 6 truly shines. I've used GoPros and other waterproof cameras for snorkeling before, but the color balance on the Action 6 underwater is noticeably better. The warm tones of the reef don't go as blue-green as they do on some cameras, and the footage retains more detail in the fish scales and coral textures. I shot in 4K/60fps for the snorkeling session and the slow-motion playback of the sea turtle footage was genuinely stunning.</p>
+
+<p>Note that Hanauma Bay requires an advance reservation and a mandatory educational video before you enter. The reservation system can fill up fast, especially in spring and summer, so book online as soon as you know your travel dates.</p>
+
+<div class="tip-box">
+  <div class="tip-label">📍 Practical Tips — Hanauma Bay</div>
+  <ul>
+    <li><strong>Reservations:</strong> Required. Book at <a href="https://www.hanaumabaystatepark.com" target="_blank" rel="noopener noreferrer">hanaumabaystatepark.com</a>. Opens 60 days in advance; popular slots sell out in minutes.</li>
+    <li><strong>Parking:</strong> $3/car at the on-site lot. No street parking nearby. Alternatively, the #22 TheBus from Waikiki stops right at the entrance.</li>
+    <li><strong>Entry fee:</strong> $25/person for non-Hawaii residents (ages 13+). Children under 12 are free. Hawaii residents are free.</li>
+    <li><strong>Best time to go:</strong> First entry slot (7 AM) for the clearest water and fewest people.</li>
+    <li><strong>DJI Action 6 tip:</strong> No housing needed — rated to 20m. Use the flat lens filter if you have one for sharper underwater images. Shoot 4K/60fps for slow-mo playback.</li>
+  </ul>
+</div>
+
+<h2 class="post-h2">🤿 Diving with Waikiki Dive Center</h2>
+
+<p>If snorkeling at Hanauma Bay whetted your appetite, diving with Waikiki Dive Center takes things to a completely different level. We booked a two-tank boat dive and headed out to explore the reefs off the south shore of Oahu. Our divemaster was fantastic — patient, knowledgeable, and really good at pointing out the things you'd otherwise swim right past: a tiny frogfish camouflaged against the coral, a moray eel peering out of a crevice, a resting white-tip reef shark tucked under a ledge.</p>
+
+<p>I brought the DJI Action 6 down with me, and this was the real test of its underwater credentials. We dove to about 50 feet, and the camera handled it without any issues. The footage was bright and detailed — the Action 6's sensor handles low-light situations better than most action cameras in its class, which matters at depth where ambient light is reduced. I shot in 2.7K/120fps to preserve frame rate for slow motion, and the clips came out beautifully.</p>
+
+<p>One thing to keep in mind: at depth, colors shift dramatically. Reds disappear first around 15–20 feet, then oranges and yellows. The DJI Action 6 does a solid job of color-balancing for this automatically in most cases, but if you really want accurate underwater color, a red filter is worth picking up for your dive shots.</p>
+
+<div class="tip-box">
+  <div class="tip-label">📍 Practical Tips — Waikiki Dive Center</div>
+  <ul>
+    <li><strong>Location:</strong> 1734 Kalakaua Ave, Honolulu (just a few minutes from Waikiki Beach).</li>
+    <li><strong>Pricing:</strong> Two-tank boat dives typically run $120–$160/person. Intro dives for non-certified divers also available.</li>
+    <li><strong>Booking:</strong> Reserve in advance, especially during peak season (spring and summer). Walk-ins are sometimes possible off-season.</li>
+    <li><strong>DJI Action 6 tip:</strong> Rated waterproof to 20m — perfect for recreational dive depths. Consider a red filter lens for more accurate colors below 30 feet.</li>
+  </ul>
+</div>
+
+<h2 class="post-h2">🏛️ Army Museum at Waikiki (Fort DeRussy)</h2>
+
+<p>Not every stop on our trip was about waves and wildlife, and honestly, the U.S. Army Museum of Hawaii at Fort DeRussy was one of my favorite moments of the whole week. It's tucked right into the middle of Waikiki — steps from the beach — and it's completely free to enter. Yet almost every tourist we talked to hadn't even heard of it.</p>
+
+<p>The museum is housed inside Battery Randolph, a massive concrete bunker built in 1911 to defend Honolulu Harbor. The exhibits cover Hawaii's military history from the Kingdom of Hawaii through World War II, the Korean War, Vietnam, and beyond. The WWII section is particularly powerful — there's a detailed account of the Pearl Harbor attack, personal stories from survivors, and a collection of artifacts that puts the scale of that day in stark human terms.</p>
+
+<p>For families, this is an excellent way to give kids some historical context for the place they're visiting. My kids were fascinated by the tanks and artillery pieces displayed outside, and the indoor exhibits held their attention longer than I expected. The building itself — with its four-foot-thick concrete walls — is an experience all its own.</p>
+
+<p>I shot the museum visit on the DJI Action 6 in regular video mode (not wide angle) to keep the indoor perspective more natural. The camera's low-light performance inside the bunker was solid — no grain or muddiness in the darker exhibit halls, which I was genuinely impressed by.</p>
+
+<div class="tip-box">
+  <div class="tip-label">📍 Practical Tips — Army Museum at Fort DeRussy</div>
+  <ul>
+    <li><strong>Address:</strong> 2161 Kalia Rd, Honolulu, HI 96815 (inside Fort DeRussy Beach Park, Waikiki).</li>
+    <li><strong>Hours:</strong> Tuesday–Saturday, 10 AM–4:15 PM. Closed Sunday and Monday.</li>
+    <li><strong>Admission:</strong> Free (donations appreciated).</li>
+    <li><strong>Parking:</strong> Street parking on Kalia Rd or use the Hilton Hawaiian Village parking structure nearby ($5–$10).</li>
+    <li><strong>DJI Action 6 tip:</strong> Use standard (non-ultrawide) mode indoors for more natural proportions. Low-light performance is strong — no need to bump ISO manually.</li>
+  </ul>
+</div>
+
+<h2 class="post-h2">Final Thoughts: DJI Action 6 for Family Travel</h2>
+
+<p>After a full week shooting everything from surf to caves to coral reefs, here's my honest take on the DJI Action 6: it's the best travel action camera I've used for a family trip. Here's why it worked so well for us:</p>
+
+<ul class="post-list">
+  <li><strong>True waterproofing to 20m</strong> — No housing required for snorkeling or recreational diving. One less thing to worry about.</li>
+  <li><strong>Horizon stabilization</strong> — Surf footage, chest-mount hiking shots, and boat deck clips all came out remarkably smooth.</li>
+  <li><strong>Color science</strong> — Handles Hawaii's brilliant blues and greens beautifully, above and below the water.</li>
+  <li><strong>Compact and versatile</strong> — The magnetic mounting system is incredibly convenient. I was switching mounts in seconds.</li>
+  <li><strong>Strong low-light performance</strong> — Useful in the museum, in underwater caves, and for any dim-light situations you encounter.</li>
+</ul>
+
+<p>The main things to watch: battery life in hot weather drains faster than the specs suggest (bring spares), and if you're planning serious depth diving, a red filter will noticeably improve your color accuracy below 30 feet.</p>
+
+<p>All in all, if you're heading to Hawaii and want a camera that can go everywhere you go — without slowing you down or stressing you out — the DJI Action 6 is my top pick. I'll link it below in the gear section. And if you want to see the actual footage from this trip, head over to our <a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer">YouTube channel</a> — the Oahu vlog is live now.</p>
+
+<p>Mahalo for reading, and I hope this helps you plan your own Oahu adventure. It is, without a doubt, one of the most beautiful places I've ever been. — <em>Sid</em></p>
+
+      </div>
+
+      <!-- Bottom nav -->
+      <div class="post-nav-bottom">
+        <a href="../blog.html" class="post-back-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          Back to Blog
+        </a>
+      </div>
+
+    </div>
+  </article>
+
+<!-- Expedia Destination Banner -->
+<div style="text-align:center;margin:30px auto;padding:24px;background:linear-gradient(135deg,#E8610A,#1A1209);border-radius:16px;max-width:600px;">
+  <p style="color:#fff;font-size:13px;margin:0 0 6px;text-transform:uppercase;letter-spacing:1px;font-weight:600;">Plan Your Trip</p>
+  <h3 style="color:#fff;font-size:20px;margin:0 0 14px;">Find Hotels &amp; Flights to Hawaii</h3>
+  <a href="https://expedia.com/affiliate/hSFW5L9" target="_blank" rel="noopener noreferrer sponsored"
+     style="display:inline-block;background:#fff;color:#E8610A;font-weight:700;padding:12px 28px;border-radius:50px;text-decoration:none;font-size:15px;">
+    Search Hawaii Deals →
+  </a>
+</div>
+
+<!-- Amazon Gear -->
+<div style="background:#FFF8F0;border:1px solid #E8610A22;border-radius:16px;padding:24px;margin:30px auto;max-width:700px;text-align:center;">
+  <p style="color:#E8610A;font-size:13px;margin:0 0 4px;text-transform:uppercase;letter-spacing:1px;font-weight:600;">My Gear</p>
+  <h3 style="color:#1A1209;font-size:18px;margin:0 0 16px;">Shop What I Used in Hawaii</h3>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;">
+    <div style="display:inline-block;margin:8px;"><a href="https://amzn.to/4rQD5qV" target="_blank" rel="noopener noreferrer sponsored" style="display:inline-block;background:#E8610A;color:#fff;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;">DJI Action 6 Camera →</a></div>
+    <div style="display:inline-block;margin:8px;"><iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=travelingcali-20&language=en_US&marketplace=amazon&region=US&placement=B09BBMQKSR&asins=B09BBMQKSR&linkId=e60b7c4833f2b43c04f3434b337b9239&show_border=true&link_opens_in_new_window=true"></iframe></div>
+  </div>
+  <p style="font-size:11px;color:#888;margin:12px 0 0;">Affiliate links — I earn a small commission at no extra cost to you. Thanks for supporting the channel!</p>
+</div>
+
+<!-- Amazon Storefront + Disclaimer -->
+<div style="background:#1A1209;color:#ccc;padding:20px 24px;margin:30px auto;border-radius:12px;max-width:700px;font-size:13px;line-height:1.6;">
+  <p style="margin:0 0 10px;">🛒 <strong style="color:#E8610A;">Shop My Amazon Storefront:</strong> <a href="https://www.amazon.com/shop/travelingcalifornian" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">amazon.com/shop/travelingcalifornian</a></p>
+  <p style="margin:0 0 10px;">✈️ <a href="https://expedia.com/affiliate/iT797so" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Book Travel on Expedia</a> &nbsp;|&nbsp; <a href="https://expedia.com/affiliate/7lGFp20" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Hotels</a> &nbsp;|&nbsp; <a href="https://expedia.com/affiliate/yoiiS86" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Flights</a> &nbsp;|&nbsp; <a href="https://expedia.com/affiliate/g2vYOEW" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Car Rental</a> &nbsp;|&nbsp; <a href="https://expedia.com/affiliate/RxEFi2y" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Activities</a></p>
+  <p style="margin:0;font-size:11px;color:#888;font-style:italic;"><strong>Disclaimer:</strong> Links included in this post might be affiliate links. If you purchase a product or service with the links that I provide I may receive a small commission. There is no additional charge to you! Thank you for supporting my channel so I can continue creating free content.</p>
+</div>
+
+  <!-- AD SLOT 3: Leaderboard, bottom of article, before footer -->
+<!-- Expedia Affiliate Banner -->
+<div style="text-align:center;margin:20px auto;">
+<div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="medium-rectangle" data-image="beach" data-message="bye-bye-bucket-list-hello-adventure" data-camref="1011lvAMj" data-pubref="" data-link="home"></div>
+<script class="eg-affiliate-banners-script" src="https://creator.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo" aria-label="Traveling Californian">
+          <div class="logo-icon" style="width:36px;height:36px;">
+            <svg viewBox="0 0 26 26" fill="none" aria-hidden="true" width="20" height="20">
+              <path d="M13 3 C13 3, 7 8, 5 14 C3 20, 8 23, 13 23 C18 23, 23 20, 21 14 C19 8, 13 3, 13 3Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+              <circle cx="13" cy="10" r="2" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="logo-text" style="font-size:0.95rem;">
+            Traveling Californian
+            <span>Family Travel &amp; Adventures</span>
+          </div>
+        </a>
+        <p>California family exploring the world one adventure at a time. Watch our vlogs, read our blog, and rent our Jeep on Turo!</p>
+      </div>
+      <div class="footer-col">
+        <h4>Watch</h4>
+        <ul role="list">
+          <li><a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer">YouTube Channel</a></li>
+          <li><a href="../index.html#videos">Latest Vlogs</a></li>
+          <li><a href="https://www.youtube.com/@TravelingCalifornian/videos" target="_blank" rel="noopener noreferrer">All Videos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Read</h4>
+        <ul role="list">
+          <li><a href="../blog.html">All Blog Posts</a></li>
+          <li><a href="../blog.html">Destination Guides</a></li>
+          <li><a href="../blog.html">Gear Reviews</a></li>
+          <li><a href="../blog.html">Travel Tips</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul role="list">
+          <li><a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer">Rent Our Jeep (Turo)</a></li>
+          <li><a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Traveling Californian. Made with ❤️ in California.</p>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.5.6c-1 .3-1.7 1.1-2 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1 1.8 2 2.1 1.9.6 9.5.6 9.5.6s7.6 0 9.5-.6c1-.3 1.7-1.1 2-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4L16 12l-6.5 3.6z"/></svg>
+        </a>
+        <a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer" aria-label="Turo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.875V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+<!-- Amazon Storefront + Disclaimer -->
+<div style="background:#1A1209;color:#ccc;padding:20px 24px;margin:30px auto;border-radius:12px;max-width:700px;font-size:13px;line-height:1.6;">
+  <p style="margin:0 0 10px;">
+    🛒 <strong style="color:#E8610A;">Shop My Amazon Storefront:</strong> 
+    <a href="https://www.amazon.com/shop/travelingcalifornian" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">amazon.com/shop/travelingcalifornian</a>
+  </p>
+  <p style="margin:0 0 10px;">
+    ✈️ <a href="https://expedia.com/affiliate/iT797so" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Book Travel on Expedia</a> &nbsp;|&nbsp;
+    <a href="https://expedia.com/affiliate/7lGFp20" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Hotels</a> &nbsp;|&nbsp;
+    <a href="https://expedia.com/affiliate/yoiiS86" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Flights</a> &nbsp;|&nbsp;
+    <a href="https://expedia.com/affiliate/g2vYOEW" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Car Rental</a> &nbsp;|&nbsp;
+    <a href="https://expedia.com/affiliate/RxEFi2y" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Activities</a>
+  </p>
+  <p style="margin:0;font-size:11px;color:#888;font-style:italic;">
+    <strong>Disclaimer:</strong> Links included in this post might be affiliate links. If you purchase a product or service with the links that I provide I may receive a small commission. There is no additional charge to you! Thank you for supporting my channel so I can continue creating free content.
+  </p>
+</div>
+</footer>
+
+<script>
+  // Theme toggle
+  (function(){
+    const t = document.querySelector('[data-theme-toggle]');
+    const r = document.documentElement;
+    let d = r.getAttribute('data-theme') || 'light';
+    updateIcon(d);
+    t && t.addEventListener('click', () => {
+      d = d === 'dark' ? 'light' : 'dark';
+      r.setAttribute('data-theme', d);
+      updateIcon(d);
+    });
+    function updateIcon(theme) {
+      if (!t) return;
+      t.innerHTML = theme === 'dark'
+        ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+        : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    }
+  })();
+
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('site-header--scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  const mobileNav = document.getElementById('mobile-nav');
+  document.getElementById('menu-open').addEventListener('click', () => mobileNav.classList.add('active'));
+  document.getElementById('menu-close').addEventListener('click', () => mobileNav.classList.remove('active'));
+  function closeMobileNav() { mobileNav.classList.remove('active'); }
+</script>
+</body>
+</html>
