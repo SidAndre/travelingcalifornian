@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling Californian — Family Travel Vlogs &amp; Adventures</title>
+  <meta name="description" content="Joyful family travel vlogs, destination guides, gear reviews, and a Jeep Wrangler available to rent on Turo. Based in California, exploring the world!">
+  <meta property="og:title" content="Traveling Californian — Family Travel Vlogs">
+  <meta property="og:description" content="Joyful family adventures across California and beyond. Watch our vlogs, read our blog, and rent our Jeep Wrangler on Turo!">
+  <meta property="og:image" content="./assets/hero-family-happy.png">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<a href="#main" class="sr-only" style="position:fixed;top:0;left:0;z-index:999;padding:1rem 1.5rem;background:var(--color-primary);color:#fff;border-radius:0 0 var(--radius-md) 0;">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <nav class="nav-container">
+    <a href="#" class="logo" aria-label="Traveling Californian Home">
+      <div class="logo-icon">
+        <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
+          <path d="M13 3 C13 3, 7 8, 5 14 C3 20, 8 23, 13 23 C18 23, 23 20, 21 14 C19 8, 13 3, 13 3Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+          <path d="M8 17 Q10 12, 13 10 Q16 8, 18 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+          <circle cx="13" cy="10" r="2" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        Traveling Californian
+        <span>Family Travel &amp; Adventures</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#videos">Vlogs</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#turo">Rent Our Jeep</a></li>
+      <li><a href="#about">About Us</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer" class="btn-rent">
+        🚙 Rent Our Jeep
+      </a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="menu-open" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
+  <button class="mobile-nav-close" id="menu-close" aria-label="Close menu">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="#videos" onclick="closeMobileNav()">Vlogs</a>
+  <a href="#blog" onclick="closeMobileNav()">Blog</a>
+  <a href="#turo" onclick="closeMobileNav()">Rent Our Jeep</a>
+  <a href="#about" onclick="closeMobileNav()">About Us</a>
+</div>
+
+<!-- MAIN -->
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="./assets/family-hero.jpeg" alt="The Traveling Californian family smiling together on a Hawaii beach" width="1792" height="1008" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        4.44K YouTube Subscribers
+      </div>
+      <h1>Travel More,<br><span class="highlight">Together.</span></h1>
+      <p class="hero-subtitle">Family adventures across California and beyond — from Sequoia to the Philippines. Watch our vlogs, read the blog, and hit the road in our Jeep!</p>
+      <div class="hero-actions">
+        <a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          ▶ Watch Our Vlogs
+        </a>
+        <a href="#turo" class="btn-secondary">
+          🚙 Rent Our Jeep
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">188</div>
+          <div class="hero-stat-label">Videos Published</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">4.44K</div>
+          <div class="hero-stat-label">Subscribers</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">35</div>
+          <div class="hero-stat-label">Jeep Rentals</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">5.0⭐</div>
+          <div class="hero-stat-label">Turo Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTUBE VLOGS -->
+  <section class="section" id="videos">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <div class="section-label">Watch</div>
+        <h2 class="section-title">Latest Vlogs</h2>
+        <p class="section-desc">Real family adventures, real destinations — catch up on our newest videos from around the globe.</p>
+      </div>
+
+      <div class="videos-grid fade-in">
+        <!-- Featured Video -->
+        <div class="video-card video-card-featured">
+          <a href="https://www.youtube.com/watch?v=4PuRX5uTlBo" target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb">
+              <img src="./assets/philippines-britania.png" alt="From California to Paradise – Family Vacation in Britania Islands, Philippines" width="480" height="360" loading="lazy" decoding="async">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20"/></svg>
+              </div>
+            </div>
+            <div class="video-info">
+              <div class="video-tag">Latest Vlog</div>
+              <h3>From California to Paradise 🇵🇭 | Family Vacation in Britania Islands</h3>
+              <div class="video-meta-row">87 views &middot; 1 month ago</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sidebar videos -->
+        <div class="video-sidebar">
+          <div class="video-card video-card-small">
+            <a href="https://www.youtube.com/watch?v=WI4zPlU7pPQ" target="_blank" rel="noopener noreferrer">
+              <div class="video-thumb">
+                <img src="./assets/solvang-pastries.png" alt="Discover The Best Solvang Pastries" width="480" height="360" loading="lazy" decoding="async">
+                <div class="play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20"/></svg>
+                </div>
+              </div>
+              <div class="video-info">
+                <div class="video-tag">Destination</div>
+                <h3>Discover The Best Solvang Pastries</h3>
+                <div class="video-meta-row">1.1K views &middot; 1 year ago</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="video-card video-card-small">
+            <a href="https://www.youtube.com/watch?v=5lWe9eVNZe8" target="_blank" rel="noopener noreferrer">
+              <div class="video-thumb">
+                <img src="./assets/hero-california.png" alt="Yongnuo 11mm Lens in Las Vegas and Sequoia – EPIC VACATION!" width="480" height="360" loading="lazy" decoding="async">
+                <div class="play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20"/></svg>
+                </div>
+              </div>
+              <div class="video-info">
+                <div class="video-tag">Gear + Travel</div>
+                <h3>Yongnuo 11mm Lens in Las Vegas &amp; Sequoia — EPIC VACATION!</h3>
+                <div class="video-meta-row">506 views &middot; 1 year ago</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- YouTube Subscribe Row -->
+      <div class="yt-subscribe-row fade-in">
+        <div class="yt-channel-info">
+          <div class="yt-icon">
+            <svg viewBox="0 0 24 24"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.5.6c-1 .3-1.7 1.1-2 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1 1.8 2 2.1 1.9.6 9.5.6 9.5.6s7.6 0 9.5-.6c1-.3 1.7-1.1 2-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4L16 12l-6.5 3.6z"/></svg>
+          </div>
+          <div>
+            <div class="yt-channel-name">@TravelingCalifornian</div>
+            <div class="yt-sub-count">4.44K subscribers &middot; 188 videos</div>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer" class="btn-yt">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.5.6c-1 .3-1.7 1.1-2 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1 1.8 2 2.1 1.9.6 9.5.6 9.5.6s7.6 0 9.5-.6c1-.3 1.7-1.1 2-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4L16 12l-6.5 3.6z"/></svg>
+          Subscribe on YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section section-bg" id="blog">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <div class="section-label">Read</div>
+        <h2 class="section-title">From the Blog</h2>
+        <p class="section-desc">Gear reviews, destination guides, and travel tips from our family adventures.</p>
+      </div>
+
+      <div class="blog-grid fade-in">
+        <div class="blog-card">
+          <a href="https://travelingcalifornian.com/the-sony-55-210mm-lens-a-game-changer-for-zv-e10/" target="_blank" rel="noopener noreferrer">
+            <div class="blog-img">
+              <img src="./assets/sony-lens-gear.png" alt="Sony 55-210mm lens gear review" width="600" height="340" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Gear Review</span>
+              <h3>The Sony 55-210mm Lens: A Game-Changer for ZV-E10</h3>
+              <div class="blog-date">June 3, 2024</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="blog-card">
+          <a href="https://travelingcalifornian.com/exploring-iconic-locations-with-the-yongnuo-11mm-f1-8-lens/" target="_blank" rel="noopener noreferrer">
+            <div class="blog-img">
+              <img src="./assets/vegas-sequoia.png" alt="Yongnuo 11mm lens in Las Vegas and Sequoia" width="600" height="340" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Gear + Adventure</span>
+              <h3>Exploring Iconic Locations with the Yongnuo 11mm f/1.8 Lens</h3>
+              <div class="blog-date">June 3, 2024</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="blog-card">
+          <a href="https://travelingcalifornian.com/blogs/" target="_blank" rel="noopener noreferrer">
+            <div class="blog-img">
+              <img src="./assets/solvang-pastries.png" alt="Solvang pastries and Danish bakery California" width="600" height="340" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Destination Guide</span>
+              <h3>Discover The Best Solvang Pastries — California's Danish Village</h3>
+              <div class="blog-date">Destination Guides</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="blog-card">
+          <a href="https://travelingcalifornian.com/blogs/" target="_blank" rel="noopener noreferrer">
+            <div class="blog-img">
+              <img src="./assets/usa-destinations.png" alt="Top 5 Must-See Places in the USA" width="600" height="340" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Destination Guide</span>
+              <h3>Discover The Top 5 Must-See Places In The USA</h3>
+              <div class="blog-date">Destination Guides</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="blog-card">
+          <a href="https://travelingcalifornian.com/blogs/" target="_blank" rel="noopener noreferrer">
+            <div class="blog-img">
+              <img src="./assets/hawaii-travel.png" alt="Hawaiian-Themed Wedding renewal" width="600" height="340" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Family</span>
+              <h3>Eternal Love Renewed: Enchanting Hawaiian-Themed Wedding</h3>
+              <div class="blog-date">April 24, 2023</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="blog-card">
+          <a href="https://travelingcalifornian.com/blogs/" target="_blank" rel="noopener noreferrer">
+            <div class="blog-img">
+              <img src="./assets/skagit-tulips.png" alt="Skagit Valley Tulip Festival" width="600" height="340" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-body">
+              <span class="blog-cat">Destination Guide</span>
+              <h3>Explore The Splendor: Skagit Valley Tulip Festival Beauty</h3>
+              <div class="blog-date">Destination Guides</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: var(--space-8);">
+        <a href="blog.html" class="btn-secondary">
+          View All Posts →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TURO / JEEP RENTAL -->
+  <section class="section turo-section" id="turo">
+    <div class="section-inner">
+      <div class="turo-grid">
+        <div class="turo-image fade-in">
+          <img src="./assets/jeep-wrangler.png" alt="2017 Jeep Wrangler Unlimited Sport on a Sequoia mountain road available for rent on Turo in Fresno CA" width="1792" height="1008" loading="lazy" decoding="async">
+        </div>
+
+        <div class="turo-content fade-in">
+          <div class="section-label">Rent With Us</div>
+          <div class="turo-badge-row">
+            <div class="badge-allstar">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              All-Star Host
+            </div>
+            <div class="badge-rating">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              5.0 · 35 trips
+            </div>
+          </div>
+
+          <h2>Take Our Jeep<br>on Your Next Adventure</h2>
+          <p>We're not just travelers — we share the adventure. Rent our 2017 Jeep Wrangler Unlimited Sport, based in Fresno, CA. Perfect for road trips to Sequoia, Mammoth Lakes, Yosemite, and beyond.</p>
+
+          <div class="turo-features">
+            <span class="feature-tag">🏔️ AWD</span>
+            <span class="feature-tag">🔵 Bluetooth</span>
+            <span class="feature-tag">🔌 USB &amp; AUX</span>
+            <span class="feature-tag">☀️ Convertible Top</span>
+            <span class="feature-tag">🪑 5 Seats</span>
+            <span class="feature-tag">⚙️ Automatic</span>
+            <span class="feature-tag">📍 Fresno, CA</span>
+          </div>
+
+          <div class="turo-price-row">
+            <div>
+              <div class="price-from">From</div>
+              <div class="price-num">$199</div>
+              <div class="price-unit">/ day</div>
+            </div>
+            <div class="price-divider"></div>
+            <div>
+              <div class="trips-count">35 Trips</div>
+              <div class="trips-label">Completed</div>
+            </div>
+            <div class="price-divider"></div>
+            <div>
+              <div class="trips-count">5.0 ⭐</div>
+              <div class="trips-label">Rating</div>
+            </div>
+          </div>
+
+          <a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer" class="btn-turo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            Book on Turo
+          </a>
+
+          <div class="turo-reviews">
+            <h4>What guests are saying</h4>
+            <div class="review-cards">
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"Such an amazing experience! The Jeep was perfect for our trip to Sequoia National Park. Pick-up and drop-off were super quick and easy."</div>
+                <div class="review-name">Kendra</div>
+                <div class="review-date">March 2026</div>
+              </div>
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"Took the Jeep up to Mammoth Lakes. Had a wonderful time. Great host, great vehicle!"</div>
+                <div class="review-name">Liam</div>
+                <div class="review-date">March 2026</div>
+              </div>
+              <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"Had such a great rental experience from start to finish! The Jeep had great gas mileage and was really fun to drive."</div>
+                <div class="review-name">Aaron</div>
+                <div class="review-date">February 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-img-wrap fade-in">
+          <div class="about-img-main">
+            <img src="./assets/family-hero.jpeg" alt="The Traveling Californian family smiling together on a Hawaii beach" width="1792" height="1008" loading="lazy" decoding="async">
+          </div>
+          <div class="about-fun-badge">
+            <div class="big-num">188</div>
+            <div class="small-text">Videos &amp; Counting!</div>
+          </div>
+        </div>
+
+        <div class="about-content fade-in">
+          <div class="section-label">Our Story</div>
+          <h2>We're a Family That Never Stops Exploring</h2>
+          <p>Welcome to Traveling Californian! We're a warm, adventurous California family documenting our journeys across the Golden State and the world — from the Sequoia forests in our backyard to the tropical islands of the Philippines.</p>
+          <p>We believe the best memories are made together. Every destination is a new chapter, every vlog is a memory we get to share with you. You're not just a viewer — you're part of our family!</p>
+
+          <div class="about-stats-row">
+            <div>
+              <div class="about-stat-num">188</div>
+              <div class="about-stat-label">Videos</div>
+            </div>
+            <div>
+              <div class="about-stat-num">4.44K</div>
+              <div class="about-stat-label">Subscribers</div>
+            </div>
+            <div>
+              <div class="about-stat-num">5.0⭐</div>
+              <div class="about-stat-label">Turo Host</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section newsletter-section">
+    <div class="section-inner">
+      <div class="section-label">Stay in the Loop</div>
+      <h2 class="section-title">Join Our Travel Family</h2>
+      <p class="section-desc">Get insider travel tips, destination guides, gear recommendations, and exclusive content — straight to your inbox!</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='🎉 You\'re in!'; this.querySelector('input').value='';">
+        <input type="email" placeholder="Your email address" aria-label="Email address" required>
+        <button type="submit">Subscribe Free</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="Traveling Californian">
+          <div class="logo-icon" style="width:36px;height:36px;">
+            <svg viewBox="0 0 26 26" fill="none" aria-hidden="true" width="20" height="20">
+              <path d="M13 3 C13 3, 7 8, 5 14 C3 20, 8 23, 13 23 C18 23, 23 20, 21 14 C19 8, 13 3, 13 3Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+              <circle cx="13" cy="10" r="2" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="logo-text" style="font-size:0.95rem;">
+            Traveling Californian
+            <span>Family Travel &amp; Adventures</span>
+          </div>
+        </a>
+        <p>California family exploring the world one adventure at a time. Watch our vlogs, read our blog, and rent our Jeep on Turo!</p>
+      </div>
+      <div class="footer-col">
+        <h4>Watch</h4>
+        <ul role="list">
+          <li><a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer">YouTube Channel</a></li>
+          <li><a href="#videos">Latest Vlogs</a></li>
+          <li><a href="https://www.youtube.com/@TravelingCalifornian/videos" target="_blank" rel="noopener noreferrer">All Videos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Read</h4>
+        <ul role="list">
+          <li><a href="https://travelingcalifornian.com/blogs/" target="_blank" rel="noopener noreferrer">All Blog Posts</a></li>
+          <li><a href="https://travelingcalifornian.com/blogs/" target="_blank" rel="noopener noreferrer">Destination Guides</a></li>
+          <li><a href="https://travelingcalifornian.com/blogs/" target="_blank" rel="noopener noreferrer">Gear Reviews</a></li>
+          <li><a href="https://travelingcalifornian.com/blogs/" target="_blank" rel="noopener noreferrer">Travel Tips</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul role="list">
+          <li><a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer">Rent Our Jeep (Turo)</a></li>
+          <li><a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Traveling Californian. Made with ❤️ in California.</p>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.5.6c-1 .3-1.7 1.1-2 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1 1.8 2 2.1 1.9.6 9.5.6 9.5.6s7.6 0 9.5-.6c1-.3 1.7-1.1 2-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4L16 12l-6.5 3.6z"/></svg>
+        </a>
+        <a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer" aria-label="Turo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.875V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Theme toggle
+  (function(){
+    const t = document.querySelector('[data-theme-toggle]');
+    const r = document.documentElement;
+    let d = r.getAttribute('data-theme') || 'light';
+    updateIcon(d);
+    t && t.addEventListener('click', () => {
+      d = d === 'dark' ? 'light' : 'dark';
+      r.setAttribute('data-theme', d);
+      updateIcon(d);
+    });
+    function updateIcon(theme) {
+      if (!t) return;
+      t.innerHTML = theme === 'dark'
+        ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+        : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    }
+  })();
+
+  // Scroll header shadow
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('site-header--scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // Mobile nav
+  const mobileNav = document.getElementById('mobile-nav');
+  document.getElementById('menu-open').addEventListener('click', () => mobileNav.classList.add('active'));
+  document.getElementById('menu-close').addEventListener('click', () => mobileNav.classList.remove('active'));
+  function closeMobileNav() { mobileNav.classList.remove('active'); }
+</script>
+</body>
+</html>
