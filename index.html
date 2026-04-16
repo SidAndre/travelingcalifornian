@@ -210,7 +210,7 @@
 
       <div class="blog-grid fade-in">
         <div class="blog-card">
-          <a href="posts/hawaii-oahu-dji-action-6-adventure.html">
+          <a href='/posts/hawaii-oahu-dji-action-6-adventure'>
             <div class="blog-img">
               <img src="./assets/hawaii-travel.png" alt="Filming Hawaii with the DJI Action 6: Oahu Adventures with Family" width="600" height="340" loading="lazy" decoding="async">
             </div>
@@ -223,7 +223,7 @@
         </div>
 
         <div class="blog-card">
-          <a href="blog.html" target="_blank" rel="noopener noreferrer">
+          <a href='/blog' rel='noopener noreferrer' target='_blank'>
             <div class="blog-img">
               <img src="./assets/vegas-sequoia.png" alt="Yongnuo 11mm lens in Las Vegas and Sequoia" width="600" height="340" loading="lazy" decoding="async">
             </div>
@@ -289,7 +289,7 @@
       </div>
 
       <div style="text-align:center; margin-top: var(--space-8);">
-        <a href="blog.html" class="btn-secondary">
+        <a class='btn-secondary' href='/blog'>
           View All Posts →
         </a>
       </div>
@@ -300,8 +300,40 @@
   <section class="section turo-section" id="turo">
     <div class="section-inner">
       <div class="turo-grid">
-        <div class="turo-image fade-in">
-          <img src="./assets/jeep-wrangler.png" alt="2017 Jeep Wrangler Unlimited Sport on a Sequoia mountain road available for rent on Turo in Fresno CA" width="1792" height="1008" loading="lazy" decoding="async">
+
+        <!-- PHOTO GALLERY (left column) -->
+        <div class="turo-gallery fade-in">
+          <!-- Main featured photo -->
+          <div class="turo-gallery-main" id="turoMainPhoto">
+            <img src="./assets/jeep-beach-family.jpg" alt="Family with Jeep Wrangler on the beach" id="turoMainImg" loading="lazy" decoding="async">
+          </div>
+          <!-- Thumbnail strip -->
+          <div class="turo-thumbs" id="turoThumbs">
+            <button class="turo-thumb active" onclick="setTuroPhoto(this, './assets/jeep-beach-family.jpg', 'Family with Jeep Wrangler on the beach')">
+              <img src="./assets/jeep-beach-family.jpg" alt="Family beach" loading="lazy">
+            </button>
+            <button class="turo-thumb" onclick="setTuroPhoto(this, './assets/jeep-mountain.jpg', 'Jeep Wrangler on mountain road with scenic backdrop')">
+              <img src="./assets/jeep-mountain.jpg" alt="Mountain road" loading="lazy">
+            </button>
+            <button class="turo-thumb" onclick="setTuroPhoto(this, './assets/turo-1.jpg', 'Jeep Wrangler exterior')">
+              <img src="./assets/turo-1.jpg" alt="Jeep exterior" loading="lazy">
+            </button>
+            <button class="turo-thumb" onclick="setTuroPhoto(this, './assets/turo-2.jpg', 'Jeep Wrangler side view')">
+              <img src="./assets/turo-2.jpg" alt="Jeep side" loading="lazy">
+            </button>
+            <button class="turo-thumb" onclick="setTuroPhoto(this, './assets/turo-3.jpg', 'Jeep Wrangler rear view')">
+              <img src="./assets/turo-3.jpg" alt="Jeep rear" loading="lazy">
+            </button>
+            <button class="turo-thumb" onclick="setTuroPhoto(this, './assets/turo-4.jpg', 'Jeep Wrangler on road')">
+              <img src="./assets/turo-4.jpg" alt="Jeep on road" loading="lazy">
+            </button>
+            <button class="turo-thumb" onclick="setTuroPhoto(this, './assets/turo-5.jpg', 'Jeep Wrangler interior')">
+              <img src="./assets/turo-5.jpg" alt="Jeep interior" loading="lazy">
+            </button>
+            <button class="turo-thumb" onclick="setTuroPhoto(this, './assets/turo-6.jpg', 'Jeep Wrangler detail')">
+              <img src="./assets/turo-6.jpg" alt="Jeep detail" loading="lazy">
+            </button>
+          </div>
         </div>
 
         <div class="turo-content fade-in">
@@ -333,7 +365,7 @@
           <div class="turo-price-row">
             <div>
               <div class="price-from">From</div>
-              <div class="price-num">$199</div>
+              <div class="price-num">$80</div>
               <div class="price-unit">/ day</div>
             </div>
             <div class="price-divider"></div>
@@ -348,7 +380,7 @@
             </div>
           </div>
 
-          <a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer" class="btn-turo">
+          <a href="https://turo.com/us/en/suv-rental/united-states/fresno-ca/jeep/wrangler-unlimited/3171433" target="_blank" rel="noopener noreferrer" class="btn-turo">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
             Book on Turo
           </a>
@@ -476,10 +508,8 @@
         <ul role="list">
           <li><a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer">Rent Our Jeep (Turo)</a></li>
           <li><a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=100094621255863" target="_blank" rel="noopener noreferrer">Facebook</a></li>
           <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="https://www.tiktok.com/@travelingcaliforn" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-          <li><a href="https://x.com/sidcalifornian" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
         </ul>
       </div>
     </div>
@@ -495,19 +525,23 @@
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100094621255863" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.875V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
-        </a>
-        <a href="https://www.tiktok.com/@travelingcaliforn" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.79 1.52V6.75a4.85 4.85 0 01-1.02-.06z"/></svg>
-        </a>
-        <a href="https://x.com/sidcalifornian" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L2.25 2.25h6.846l4.263 5.634L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
         </a>
       </div>
     </div>
   </div>
 </footer>
+
+<script>
+  // Turo photo gallery
+  function setTuroPhoto(btn, src, alt) {
+    document.getElementById('turoMainImg').src = src;
+    document.getElementById('turoMainImg').alt = alt;
+    document.querySelectorAll('.turo-thumb').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
 
 <script>
   // Theme toggle
