@@ -928,27 +928,19 @@
   transition: opacity 0.2s ease;
 }
 
-/* Thumbnail strip — ALWAYS horizontal */
+/* Thumbnail strip — 8 equal tiles, always horizontal */
 .turo-thumbs {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  gap: 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
 }
 
-.turo-thumbs::-webkit-scrollbar { display: none; }
-
 .turo-thumb {
-  flex: 0 0 calc(12.5% - 0.35rem);
-  min-width: 44px;
   border: none;
   padding: 0;
   cursor: pointer;
-  border-radius: 0.4rem;
+  border-radius: 6px;
   overflow: hidden;
   aspect-ratio: 1;
   background: var(--color-surface-offset);
@@ -956,6 +948,7 @@
   transition: opacity 0.18s ease, transform 0.18s ease;
   outline: 2.5px solid transparent;
   outline-offset: 2px;
+  width: 100%;
 }
 
 .turo-thumb img {
@@ -974,16 +967,15 @@
 .turo-thumb.active {
   opacity: 1;
   outline-color: var(--color-primary);
-  box-shadow: 0 0 0 2px var(--color-primary);
+  box-shadow: 0 0 0 2.5px var(--color-primary);
 }
 
 @media (max-width: 900px) {
   .turo-gallery { position: static; }
-  .turo-thumb { flex: 0 0 calc(12.5% - 0.35rem); min-width: 40px; }
 }
 
 @media (max-width: 600px) {
-  .turo-thumb { flex: 0 0 calc(25% - 0.3rem); min-width: 60px; }
+  .turo-thumbs { grid-template-columns: repeat(4, 1fr); }
 }
 
 /* ============================================================
