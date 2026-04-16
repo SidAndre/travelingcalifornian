@@ -983,3 +983,65 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* ============================================================
+   TURO SEASONAL PRICING
+   ============================================================ */
+.turo-seasonal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--color-surface-offset);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.seasonal-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.seasonal-row + .seasonal-row {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.seasonal-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+
+.seasonal-row > div {
+  flex: 1;
+}
+
+.seasonal-label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.seasonal-dates {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-top: 0.15rem;
+}
+
+.seasonal-price {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  color: var(--color-primary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.seasonal-price span {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
