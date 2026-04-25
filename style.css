@@ -1039,3 +1039,182 @@
   font-weight: 500;
   color: var(--color-text-muted);
 }
+
+/* ============================================================
+   DESTINATION SIGNUP FORM
+   ============================================================ */
+.dest-form {
+  max-width: 680px;
+  margin: var(--space-10) auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.dest-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+@media (max-width: 600px) {
+  .dest-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dest-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.dest-form-full {
+  grid-column: 1 / -1;
+}
+
+.dest-label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 0.01em;
+}
+
+.dest-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  transition: border-color var(--transition-interactive), box-shadow var(--transition-interactive);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.dest-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-highlight);
+}
+
+.dest-input::placeholder {
+  color: var(--color-text-faint);
+}
+
+.dest-select-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dest-select {
+  padding-right: 2.75rem;
+  cursor: pointer;
+}
+
+.dest-select option,
+.dest-select optgroup {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.dest-perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-6);
+  justify-content: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.dest-btn {
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-size: var(--text-base);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--transition-interactive), transform var(--transition-interactive), box-shadow var(--transition-interactive);
+  box-shadow: var(--shadow-md);
+}
+
+.dest-btn:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.dest-btn:active {
+  background: var(--color-primary-active);
+  transform: translateY(0);
+}
+
+.dest-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.dest-success {
+  animation: fadeInUp 0.4s var(--ease-out) both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.dest-success-inner {
+  background: var(--color-surface-offset);
+  border: 1.5px solid var(--color-primary-highlight);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-10);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+@media (max-width: 600px) {
+  .dest-success-inner {
+    padding: var(--space-6);
+  }
+}
+
+.dest-success-title {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.dest-success-sub {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: 40ch;
+}
+
+.dest-deals-link {
+  display: inline-block;
+  margin-top: var(--space-2);
+  padding: var(--space-3) var(--space-8);
+  background: var(--color-secondary);
+  color: #fff;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: background var(--transition-interactive), transform var(--transition-interactive);
+  box-shadow: var(--shadow-sm);
+}
+
+.dest-deals-link:hover {
+  background: var(--color-secondary-hover);
+  transform: translateY(-1px);
+}

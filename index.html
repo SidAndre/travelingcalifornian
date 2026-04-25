@@ -453,14 +453,71 @@
   </section>
 
   <!-- NEWSLETTER -->
-  <section class="section newsletter-section">
+  <section class="section newsletter-section" id="newsletter">
     <div class="section-inner">
-      <div class="section-label">Stay in the Loop</div>
-      <h2 class="section-title">Join Our Travel Family</h2>
-      <p class="section-desc">Get insider travel tips, destination guides, gear recommendations, and exclusive content — straight to your inbox!</p>
-      <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='🎉 You\'re in!'; this.querySelector('input').value='';">
-        <input type="email" placeholder="Your email address" aria-label="Email address" required>
-        <button type="submit">Subscribe Free</button>
+      <div class="section-label">Free Travel Deals</div>
+      <h2 class="section-title">Where Do You Want to Go?</h2>
+      <p class="section-desc">Tell us your dream destination — we'll send you personalized Expedia deals, hotel finds, and packing tips matched to that exact trip. Free, always.</p>
+
+      <form class="newsletter-form dest-form" id="tc-signup-form" name="destination-signup" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="destination-signup" />
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <div class="dest-form-grid">
+          <div class="dest-form-group">
+            <label class="dest-label" for="tc-name">First Name</label>
+            <input type="text" id="tc-name" class="dest-input" placeholder="e.g. Maria" required aria-label="First name" />
+          </div>
+          <div class="dest-form-group">
+            <label class="dest-label" for="tc-email">Email Address</label>
+            <input type="email" id="tc-email" class="dest-input" placeholder="your@email.com" required aria-label="Email address" />
+          </div>
+          <div class="dest-form-group dest-form-full">
+            <label class="dest-label" for="tc-dest">Dream Destination</label>
+            <div class="dest-select-wrap">
+              <select id="tc-dest" class="dest-input dest-select" required aria-label="Dream destination">
+                <option value="" disabled selected>Pick your dream destination...</option>
+                <optgroup label="Traveling Californian Favorites">
+                  <option value="hawaii">Hawaii 🌺</option>
+                  <option value="mexico">Puerto Vallarta 🌮</option>
+                  <option value="cancun">Cancun 🏖️</option>
+                  <option value="philippines">Philippines 🇵🇭</option>
+                  <option value="california">Los Angeles / SoCal ☀️</option>
+                  <option value="yosemite">Yosemite / Grand Canyon 🌲</option>
+                </optgroup>
+                <optgroup label="USA">
+                  <option value="las-vegas">Las Vegas 🎰</option>
+                  <option value="new-york">New York City 🗽</option>
+                  <option value="florida">Florida 🐊</option>
+                </optgroup>
+                <optgroup label="International">
+                  <option value="japan">Japan 🗾</option>
+                  <option value="europe">Europe 🏰</option>
+                  <option value="costa-rica">Costa Rica 🦜</option>
+                  <option value="other">Somewhere else / Surprise me! ✈️</option>
+                </optgroup>
+              </select>
+              <svg style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);pointer-events:none;color:#888;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="dest-perks">
+          <span>✓ Expedia deals for your destination</span>
+          <span>✓ Packing tips &amp; gear picks</span>
+          <span>✓ No spam. Unsubscribe anytime.</span>
+        </div>
+
+        <button type="submit" class="dest-btn" id="tc-submit-btn">
+          Send Me Deals ✈️
+        </button>
+
+        <div class="dest-success" id="tc-success" style="display:none;">
+          <div class="dest-success-inner">
+            <div class="dest-success-title">You're in, <span id="tc-success-name"></span>! 🎉</div>
+            <div class="dest-success-sub">Check your inbox — we're hunting deals for <span id="tc-success-dest"></span> right now.</div>
+            <a id="tc-deals-btn" href="#" target="_blank" rel="noopener noreferrer" class="dest-deals-link">Browse deals now on Expedia →</a>
+          </div>
+        </div>
       </form>
     </div>
   </section>
@@ -589,6 +646,88 @@ async function fetchYTSubs() {
   } catch(e) {}
 }
 document.addEventListener('DOMContentLoaded', fetchYTSubs);
+</script>
+
+<script>
+// ── Destination Signup Form ──────────────────────────────────
+(function () {
+  var EXPEDIA = {
+    'hawaii':      'https://expedia.com/affiliate/hSFW5L9',
+    'mexico':      'https://expedia.com/affiliate/w81mLdT',
+    'cancun':      'https://expedia.com/affiliate/pXuWvgb',
+    'california':  'https://expedia.com/affiliate/sJN4MbS',
+    'yosemite':    'https://expedia.com/affiliate/BSaWIfF',
+    'las-vegas':   'https://expedia.com/affiliate/1BKUykQ',
+    'new-york':    'https://expedia.com/affiliate/TsAznGC',
+    'florida':     'https://expedia.com/affiliate/7lGFp20',
+    'philippines': 'https://expedia.com/affiliate/dearBOJ',
+    'japan':       'https://expedia.com/affiliate/dearBOJ',
+    'europe':      'https://expedia.com/affiliate/dearBOJ',
+    'costa-rica':  'https://expedia.com/affiliate/dearBOJ',
+    'other':       'https://expedia.com/affiliate/dearBOJ'
+  };
+
+  var DEST_LABELS = {
+    'hawaii':      'Hawaii',
+    'mexico':      'Puerto Vallarta',
+    'cancun':      'Cancun',
+    'california':  'Los Angeles / SoCal',
+    'yosemite':    'Yosemite / Grand Canyon',
+    'las-vegas':   'Las Vegas',
+    'new-york':    'New York City',
+    'florida':     'Florida',
+    'philippines': 'the Philippines',
+    'japan':       'Japan',
+    'europe':      'Europe',
+    'costa-rica':  'Costa Rica',
+    'other':       'your dream destination'
+  };
+
+  var form    = document.getElementById('tc-signup-form');
+  var btn     = document.getElementById('tc-submit-btn');
+  var success = document.getElementById('tc-success');
+
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var name  = document.getElementById('tc-name').value.trim();
+    var email = document.getElementById('tc-email').value.trim();
+    var dest  = document.getElementById('tc-dest').value;
+
+    // Basic validation
+    if (!name || !email || !dest) {
+      var first = !name ? 'tc-name' : (!email ? 'tc-email' : 'tc-dest');
+      document.getElementById(first).focus();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    // Submit to Netlify Forms (works out-of-the-box on Netlify)
+    var data = new FormData();
+    data.append('form-name', 'destination-signup');
+    data.append('name',  name);
+    data.append('email', email);
+    data.append('destination', dest);
+
+    fetch('/', { method: 'POST', body: data })
+      .catch(function () {}) // fail silently — still show success
+      .finally(function () {
+        form.querySelectorAll('.dest-form-grid, .dest-perks, #tc-submit-btn').forEach(function (el) {
+          el.style.display = 'none';
+        });
+        document.getElementById('tc-success-name').textContent = name.split(' ')[0];
+        document.getElementById('tc-success-dest').textContent = DEST_LABELS[dest] || dest;
+        var dealsBtn = document.getElementById('tc-deals-btn');
+        dealsBtn.href = EXPEDIA[dest] || EXPEDIA['other'];
+        dealsBtn.textContent = 'Browse ' + (DEST_LABELS[dest] || 'Deals') + ' on Expedia →';
+        success.style.display = 'block';
+      });
+  });
+})();
 </script>
 
 </body>
