@@ -751,7 +751,7 @@
   background: linear-gradient(135deg, var(--color-primary) 0%, #e8951a 100%);
   color: #fff;
   text-align: center;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 72px;
 }
 
 /* Override dest-form inputs/select for orange background */
@@ -1051,7 +1051,7 @@
    DESTINATION SIGNUP FORM
    ============================================================ */
 .dest-form {
-  max-width: 680px;
+  max-width: 780px;
   margin: var(--space-10) auto 0;
   display: flex;
   flex-direction: column;
@@ -1138,6 +1138,8 @@
 
 .dest-btn {
   width: 100%;
+  max-width: 360px;
+  margin-inline: auto;
   padding: var(--space-4) var(--space-6);
   background: var(--color-primary);
   color: var(--color-text-inverse);
@@ -1149,6 +1151,7 @@
   cursor: pointer;
   transition: background var(--transition-interactive), transform var(--transition-interactive), box-shadow var(--transition-interactive);
   box-shadow: var(--shadow-md);
+  display: block;
 }
 
 .dest-btn:hover {
