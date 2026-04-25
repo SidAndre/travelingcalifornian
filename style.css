@@ -751,38 +751,46 @@
   background: linear-gradient(135deg, var(--color-primary) 0%, #e8951a 100%);
   color: #fff;
   text-align: center;
+  scroll-margin-top: 80px;
+}
+
+/* Override dest-form inputs/select for orange background */
+.newsletter-section .dest-input {
+  background: rgba(255,255,255,0.96);
+  border-color: rgba(255,255,255,0.4);
+  color: var(--color-text);
+}
+.newsletter-section .dest-input:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.35);
+}
+.newsletter-section .dest-label {
+  color: rgba(255,255,255,0.92);
+}
+.newsletter-section .dest-perks {
+  color: rgba(255,255,255,0.85);
+}
+.newsletter-section .dest-btn {
+  background: #2c1f0e;
+  color: #fff;
+}
+.newsletter-section .dest-btn:hover {
+  background: #1a1208;
+}
+.newsletter-section .dest-success-inner {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.3);
+}
+.newsletter-section .dest-success-title,
+.newsletter-section .dest-success-sub {
+  color: #fff;
 }
 .newsletter-section .section-label { color: rgba(255,255,255,0.8); }
 .newsletter-section .section-label::before { background: rgba(255,255,255,0.6); }
 .newsletter-section .section-title { color: #fff; }
 .newsletter-section .section-desc { color: rgba(255,255,255,0.85); margin-inline: auto; }
 
-.newsletter-form {
-  display: flex; gap: var(--space-3);
-  max-width: 480px; margin-inline: auto;
-  margin-top: var(--space-8);
-}
-.newsletter-form input {
-  flex: 1;
-  padding: var(--space-4) var(--space-5);
-  background: rgba(255,255,255,0.95);
-  border: none;
-  border-radius: var(--radius-full);
-  font-size: var(--text-sm);
-  color: var(--color-text);
-}
-.newsletter-form input::placeholder { color: #a08060; }
-.newsletter-form input:focus { outline: 2px solid #fff; }
-.newsletter-form button {
-  padding: var(--space-4) var(--space-6);
-  background: #2c1f0e;
-  color: #fff;
-  border-radius: var(--radius-full);
-  font-size: var(--text-sm); font-weight: 700;
-  white-space: nowrap;
-  transition: background var(--transition-interactive), transform var(--transition-interactive);
-}
-.newsletter-form button:hover { background: #1a1208; transform: translateY(-1px); }
+/* .newsletter-form styles now handled by .dest-form — no override needed */
 
 /* ========================================
    FOOTER
@@ -890,7 +898,6 @@
   .hero-stats { gap: var(--space-5); }
   .blog-grid { grid-template-columns: 1fr; }
   .video-sidebar { flex-direction: column; }
-  .newsletter-form { flex-direction: column; }
   .footer-top { grid-template-columns: 1fr; gap: var(--space-6); }
   .footer-bottom { flex-direction: column; gap: var(--space-4); text-align: center; }
   .turo-reviews { display: none; }
