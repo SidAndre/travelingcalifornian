@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Took the FREE Hotel Tour in Puerto Vallarta — Was It a Trap? — Traveling Californian</title>
+  <meta name="description" content="Our resort offered a free city tour of Puerto Vallarta. We took it with the camera running. Here's what these tours really involve and the questions to ask before you say yes.">
+  <meta property="og:title" content="We Took the FREE Hotel Tour in Puerto Vallarta — Was It a Trap?">
+  <meta property="og:description" content="Our resort offered a free city tour of Puerto Vallarta. We took it with the camera running. Here's what these tours really involve and the questions to ask before you say yes.">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="../style.css">
+
+<style>
+  /* ============================
+     POST PAGE STYLES
+     ============================ */
+
+  /* Ad slots — clear float after rectangle ad */
+  .post-content::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .ad-slot {
+    box-sizing: border-box;
+  }
+  /* On narrow screens, rectangle ad stacks full-width */
+  @media (max-width: 640px) {
+    .ad-rectangle {
+      float: none !important;
+      margin: 0 auto 24px !important;
+      width: 100% !important;
+      max-width: 340px !important;
+    }
+  }
+
+  /* Hero */
+  .post-hero {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .post-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .post-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.35);
+  }
+  .post-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 860px;
+    margin-inline: auto;
+    padding: 0 var(--space-6) var(--space-12);
+    color: #fff;
+  }
+  .post-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: var(--radius-full);
+    padding: var(--space-1) var(--space-4);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: var(--space-4);
+  }
+  .post-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: var(--space-4);
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+  .post-hero-meta {
+    font-size: var(--text-sm);
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+  }
+
+  /* Back button */
+  .post-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    border: 2px solid var(--color-primary);
+    padding: var(--space-2) var(--space-5);
+    border-radius: var(--radius-full);
+    transition: background var(--transition-interactive), color var(--transition-interactive);
+  }
+  .post-back-btn:hover {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  .post-back-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+  /* Article wrapper */
+  .post-article-outer {
+    background: var(--color-bg);
+    padding: var(--space-12) var(--space-6);
+  }
+  .post-article-inner {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+  .post-nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-10);
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+  .post-nav-top .blog-cat {
+    font-size: var(--text-sm);
+  }
+
+  /* Article content */
+  .post-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text);
+  }
+  .post-content p {
+    margin-bottom: 1.5em;
+  }
+  .post-content .post-h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--color-primary);
+    margin-top: 2.5em;
+    margin-bottom: 0.75em;
+    line-height: 1.2;
+  }
+  .post-content .post-h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+    line-height: 1.3;
+  }
+  .post-content .post-h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  .post-content .post-list {
+    padding-left: 1.75em;
+    margin-bottom: 1.5em;
+  }
+  .post-content .post-list li {
+    margin-bottom: 0.5em;
+    line-height: 1.7;
+  }
+  .post-content .pull-quote {
+    border-left: 4px solid var(--color-primary);
+    background: var(--color-surface-2);
+    margin: 2em 0;
+    padding: var(--space-6) var(--space-8);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  .post-content a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .post-content strong {
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  /* Tip box */
+  .tip-box {
+    background: linear-gradient(135deg, rgba(10,126,168,0.08) 0%, rgba(10,126,168,0.04) 100%);
+    border: 1px solid rgba(10,126,168,0.2);
+    border-left: 4px solid #0A7EA8;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    padding: var(--space-5) var(--space-6);
+    margin: 1.8em 0;
+  }
+  .tip-box .tip-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0A7EA8;
+    margin-bottom: 0.5em;
+  }
+  .tip-box p {
+    margin-bottom: 0 !important;
+    font-size: 1rem;
+    color: var(--color-text);
+  }
+  .tip-box ul {
+    padding-left: 1.2em;
+    margin: 0.5em 0 0;
+    font-size: 1rem;
+    color: var(--color-text);
+  }
+  .tip-box ul li {
+    margin-bottom: 0.3em;
+    line-height: 1.6;
+  }
+
+  /* Post footer nav */
+  .post-nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--space-14);
+    padding-top: var(--space-10);
+    border-top: 1px solid var(--color-divider);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .post-hero { height: 380px; }
+    .post-hero-content { padding: 0 var(--space-4) var(--space-8); }
+    .post-article-outer { padding: var(--space-8) var(--space-4); }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8924832797393378"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<a href="#main" class="sr-only" style="position:fixed;top:0;left:0;z-index:999;padding:1rem 1.5rem;background:var(--color-primary);color:#fff;border-radius:0 0 var(--radius-md) 0;">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <nav class="nav-container">
+    <a href="../index.html" class="logo" aria-label="Traveling Californian Home">
+      <div class="logo-icon">
+        <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
+          <path d="M13 3 C13 3, 7 8, 5 14 C3 20, 8 23, 13 23 C18 23, 23 20, 21 14 C19 8, 13 3, 13 3Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+          <path d="M8 17 Q10 12, 13 10 Q16 8, 18 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+          <circle cx="13" cy="10" r="2" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        Traveling Californian
+        <span>Family Travel &amp; Adventures</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html#videos">Vlogs</a></li>
+      <li><a href="../blog.html" aria-current="page">Blog</a></li>
+      <li><a href="../free-family-travel-checklist.html">Free PDF</a></li>
+      <li><a href="../newsletter-funnel.html">Newsletter</a></li>
+      <li><a href="../index.html#turo">Rent Jeep</a></li>
+      <li><a href="../index.html#about">About Us</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="../free-family-travel-checklist.html" class="btn-checklist">
+        Free Checklist
+      </a>
+      <a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer" class="btn-rent">
+        Rent Jeep
+      </a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="menu-open" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
+  <button class="mobile-nav-close" id="menu-close" aria-label="Close menu">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="../index.html#videos" onclick="closeMobileNav()">Vlogs</a>
+  <a href="../blog.html" onclick="closeMobileNav()">Blog</a>
+  <a href="../free-family-travel-checklist.html" onclick="closeMobileNav()">Free Family Checklist</a>
+  <a href="../newsletter-funnel.html" onclick="closeMobileNav()">Newsletter</a>
+  <a href="../index.html#turo" onclick="closeMobileNav()">Rent Jeep</a>
+  <a href="../index.html#about" onclick="closeMobileNav()">About Us</a>
+</div>
+
+<!-- Expedia Affiliate Banner -->
+<div style="text-align:center;margin:20px auto;">
+<div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="medium-rectangle" data-image="beach" data-message="bye-bye-bucket-list-hello-adventure" data-camref="1011lvAMj" data-pubref="" data-link="home"></div>
+<script class="eg-affiliate-banners-script" src="https://creator.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+</div>
+
+<!-- MAIN -->
+<main id="main">
+
+  <!-- POST HERO -->
+  <section class="post-hero">
+    <div class="post-hero-bg" style="background: linear-gradient(135deg, #1C7C3A 0%, #1A1209 100%);"></div>
+    <div class="post-hero-overlay"></div>
+    <div class="post-hero-content">
+      <div class="post-hero-badge">Travel Tips · Honest Review</div>
+      <h1 class="post-hero-title">We Took the FREE Hotel Tour in Puerto Vallarta — Was It a Trap?</h1>
+      <div class="post-hero-meta">By Sid Somoza &nbsp;·&nbsp; September 9, 2026</div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <article class="post-article-outer">
+    <div class="post-hero-image" style="margin: 0 0 32px 0; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.18);">
+      <img src="../assets/blog-images/pv-free-hotel-tour.jpg" alt="Free hotel city tour in Puerto Vallarta — honest family review" style="width:100%; height:auto; display:block;">
+    </div>
+
+    <div class="post-article-inner">
+
+      <div class="post-nav-top">
+        <a href="../blog.html" class="post-back-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          Back to Blog
+        </a>
+        <span class="blog-cat">Travel Tips</span>
+      </div>
+
+      <div class="post-content">
+
+<p>Our hotel offered a free city tour. No charge, transportation included, a few hours around Puerto Vallarta.</p>
+
+<p>If you've traveled enough, a sentence like that sets off an alarm. Free rarely means free. So we took it — camera running, no filter — to find out exactly what a complimentary hotel tour in Puerto Vallarta actually involves.</p>
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.18);margin:28px 0 10px;">
+  <iframe src="https://www.youtube.com/embed/FU4otsa-Qc4" title="We Took the FREE Hotel Tour in Puerto Vallarta — Was It a Trap?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+</div>
+<p style="text-align:center;font-size:13px;color:#888;margin:0 0 28px;">Watch the full video on <a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer">Traveling Californian</a></p>
+
+<div class="pull-quote">"Free rarely means free. But it doesn't automatically mean trap, either."</div>
+
+<div style="text-align:center;margin:20px auto;">
+<div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="medium-rectangle" data-image="beach" data-message="bye-bye-bucket-list-hello-adventure" data-camref="1011lvAMj" data-pubref="" data-link="home"></div>
+<script class="eg-affiliate-banners-script" src="https://creator.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+</div>
+
+<h2 class="post-h2">What a "free hotel tour" usually is</h2>
+
+<p>Complimentary tours offered at the front desk of a resort generally fall into one of three buckets, and knowing which one you're being offered tells you almost everything.</p>
+
+<ul>
+  <li><strong>A genuine guest amenity.</strong> The resort runs a shuttle into town with a guide, as a service. No pitch.</li>
+  <li><strong>A partner tour.</strong> A local operator provides it free or cheap because they'll sell you a paid excursion at the end.</li>
+  <li><strong>A membership or vacation-club presentation.</strong> The tour is the incentive. The presentation is the product.</li>
+</ul>
+
+<p>All three exist in Puerto Vallarta. None of them are inherently a scam. The problem is when you don't know which one you said yes to.</p>
+
+<h2 class="post-h2">The questions to ask at the front desk</h2>
+
+<p>Before you sign up for anything described as free, ask these. The answers take thirty seconds and they remove nearly all the risk.</p>
+
+<div class="tip-box">
+  <div class="tip-label">📍 Ask before you say yes</div>
+  <ul>
+    <li><strong>"How long is it, door to door?"</strong> A three-hour tour and a six-hour tour are very different commitments.</li>
+    <li><strong>"Is there a presentation or sales portion?"</strong> If yes, ask how long — and whether you can leave.</li>
+    <li><strong>"Who runs it — the hotel or an outside company?"</strong> This single question sorts amenity from partner tour.</li>
+    <li><strong>"Do I need to attend anything to keep the tour free?"</strong> If the answer is yes, the tour is not the product.</li>
+    <li><strong>"Are meals, entrance fees, or tips included?"</strong> Usually not.</li>
+  </ul>
+</div>
+
+<h2 class="post-h2">What they show you</h2>
+
+<p>The route on these tours is almost always the same greatest-hits loop of Puerto Vallarta: the Malecón boardwalk, the Church of Our Lady of Guadalupe with its distinctive crown, the Romantic Zone, a tequila or crafts stop, and a viewpoint over Banderas Bay.</p>
+
+<p>All of it is worth seeing. None of it is hard to reach on your own — which is the real calculation. You're trading a few hours of flexibility for free transportation and a guide.</p>
+
+<h2 class="post-h2">The honest verdict</h2>
+
+<p>We go through the whole thing in the video — what the tour actually included, where the pitch came in, and whether we'd tell another family to take it.</p>
+
+<p>The short version: a free hotel tour is worth taking if you go in knowing which of the three types you signed up for, you're clear on how long it runs, and you're comfortable saying no politely and repeatedly. Go in without those three things and you'll spend an afternoon you wanted back.</p>
+
+<h2 class="post-h2">If you'd rather skip it</h2>
+
+<p>Puerto Vallarta is one of the easier cities in Mexico to explore without a tour. Taxis are inexpensive, the Malecón is entirely walkable, and the bus from the Zona Hotelera Sur into downtown costs almost nothing.</p>
+
+<p>And if you want the one excursion we'd actually spend money on, it isn't a city tour — it's a boat day south to the villages you can only reach by water. We wrote up <a href="8-things-to-know-puerto-vallarta-boat-tour.html">the eight things to know before a Puerto Vallarta boat tour</a> after ours.</p>
+
+      </div>
+    </div>
+  </article>
+
+
+<div style="background:#1A1209;color:#ccc;padding:20px 24px;margin:30px auto;border-radius:12px;max-width:700px;font-size:13px;line-height:1.6;">
+  <p style="margin:0 0 10px;">🛒 <strong style="color:#E8610A;">Shop My Amazon Storefront:</strong> <a href="https://www.amazon.com/shop/travelingcalifornian" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">amazon.com/shop/travelingcalifornian</a></p>
+  <p style="margin:0 0 10px;">✈️ <a href="https://expedia.com/affiliate/iT797so" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Book Travel on Expedia</a> &nbsp;|&nbsp; <a href="https://expedia.com/affiliate/7lGFp20" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Hotels</a> &nbsp;|&nbsp; <a href="https://expedia.com/affiliate/yoiiS86" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Flights</a> &nbsp;|&nbsp; <a href="https://expedia.com/affiliate/g2vYOEW" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Car Rental</a> &nbsp;|&nbsp; <a href="https://expedia.com/affiliate/RxEFi2y" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Activities</a></p>
+  <p style="margin:0;font-size:11px;color:#888;font-style:italic;"><strong>Disclaimer:</strong> Links included in this post might be affiliate links. If you purchase a product or service with the links that I provide I may receive a small commission. There is no additional charge to you! Thank you for supporting my channel so I can continue creating free content.</p>
+</div>
+
+
+<div style="text-align:center;margin:20px auto;">
+<div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="medium-rectangle" data-image="beach" data-message="bye-bye-bucket-list-hello-adventure" data-camref="1011lvAMj" data-pubref="" data-link="home"></div>
+<script class="eg-affiliate-banners-script" src="https://creator.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo" aria-label="Traveling Californian">
+          <div class="logo-icon" style="width:36px;height:36px;">
+            <svg viewBox="0 0 26 26" fill="none" aria-hidden="true" width="20" height="20">
+              <path d="M13 3 C13 3, 7 8, 5 14 C3 20, 8 23, 13 23 C18 23, 23 20, 21 14 C19 8, 13 3, 13 3Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+              <circle cx="13" cy="10" r="2" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="logo-text" style="font-size:0.95rem;">
+            Traveling Californian
+            <span>Family Travel &amp; Adventures</span>
+          </div>
+        </a>
+        <p>Real family travel videos, California getaways, packing resources, and practical trip notes from Sid and the Traveling Californian family.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#videos">Latest Vlogs</a></li>
+          <li><a href="../blog.html">Travel Blog</a></li>
+          <li><a href="../free-family-travel-checklist.html">Free Family Checklist</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul role="list">
+          <li><a href="../newsletter-funnel.html">Free Newsletter</a></li>
+          <li><a href="../assets/family-travel-packing-checklist-trip-planner.pdf">PDF Resource</a></li>
+          <li><a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer">Rent Our Jeep</a></li>
+          <li><a href="https://www.amazon.com/shop/travelingcalifornian" target="_blank" rel="noopener noreferrer sponsored">Amazon Storefront</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul role="list">
+          <li><a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100094621255863" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://www.instagram.com/traveling_californian/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://travelingcalifornian.substack.com" target="_blank" rel="noopener noreferrer">Substack</a></li>
+          <li><a href="https://www.tiktok.com/@travelingcaliforn" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+          <li><a href="https://x.com/sidcalifornian" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Traveling Californian. Made in California by Sid and family.</p>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@TravelingCalifornian" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1-1-1.8-2-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.5.6c-1 .3-1.7 1.1-2 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1 1 1.8 2 2.1 1.9.6 9.5.6 9.5.6s7.6 0 9.5-.6c1-.3 1.7-1.1 2-2.1.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4L16 12l-6.5 3.6z"/></svg>
+        </a>
+        <a href="https://turo.com/host/49171024" target="_blank" rel="noopener noreferrer" aria-label="Turo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </a>
+        <a href="https://www.instagram.com/traveling_californian/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100094621255863" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.875V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@travelingcaliforn" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.79 1.52V6.75a4.85 4.85 0 01-1.02-.06z"/></svg>
+        </a>
+        <a href="https://x.com/sidcalifornian" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L2.25 2.25h6.846l4.263 5.634L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+<!-- Amazon Storefront + Disclaimer -->
+<div style="background:#1A1209;color:#ccc;padding:20px 24px;margin:30px auto;border-radius:12px;max-width:700px;font-size:13px;line-height:1.6;">
+  <p style="margin:0 0 10px;">
+    🛒 <strong style="color:#E8610A;">Shop My Amazon Storefront:</strong> 
+    <a href="https://www.amazon.com/shop/travelingcalifornian" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">amazon.com/shop/travelingcalifornian</a>
+  </p>
+  <p style="margin:0 0 10px;">
+    ✈️ <a href="https://expedia.com/affiliate/iT797so" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Book Travel on Expedia</a> &nbsp;|&nbsp;
+    <a href="https://expedia.com/affiliate/7lGFp20" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Hotels</a> &nbsp;|&nbsp;
+    <a href="https://expedia.com/affiliate/yoiiS86" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Flights</a> &nbsp;|&nbsp;
+    <a href="https://expedia.com/affiliate/g2vYOEW" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Car Rental</a> &nbsp;|&nbsp;
+    <a href="https://expedia.com/affiliate/RxEFi2y" target="_blank" rel="noopener noreferrer sponsored" style="color:#E8610A;">Activities</a>
+  </p>
+  <p style="margin:0;font-size:11px;color:#888;font-style:italic;">
+    <strong>Disclaimer:</strong> Links included in this post might be affiliate links. If you purchase a product or service with the links that I provide I may receive a small commission. There is no additional charge to you! Thank you for supporting my channel so I can continue creating free content.
+  </p>
+</div>
+</footer>
+
+<script>
+  // Theme toggle
+  (function(){
+    const t = document.querySelector('[data-theme-toggle]');
+    const r = document.documentElement;
+    let d = r.getAttribute('data-theme') || 'light';
+    updateIcon(d);
+    t && t.addEventListener('click', () => {
+      d = d === 'dark' ? 'light' : 'dark';
+      r.setAttribute('data-theme', d);
+      updateIcon(d);
+    });
+    function updateIcon(theme) {
+      if (!t) return;
+      t.innerHTML = theme === 'dark'
+        ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+        : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    }
+  })();
+
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('site-header--scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  const mobileNav = document.getElementById('mobile-nav');
+  document.getElementById('menu-open').addEventListener('click', () => mobileNav.classList.add('active'));
+  document.getElementById('menu-close').addEventListener('click', () => mobileNav.classList.remove('active'));
+  function closeMobileNav() { mobileNav.classList.remove('active'); }
+</script>
+</body>
+</html>
